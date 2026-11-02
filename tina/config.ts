@@ -19,6 +19,11 @@ export default defineConfig({
   clientId: process.env.PUBLIC_TINA_CLIENT_ID,
   // Get this from tina.io
   token: process.env.TINA_TOKEN,
+  tinaioConfig: {
+    contentApiUrlOverride: "https://berman-josh-v2-content.tinajs.dev",
+    identityApiUrlOverride: "https://berman-josh-v2-identity.tinajs.dev",
+    frontendUrlOverride: "http://localhost:3002",
+  },
 
   build: {
     outputFolder: "admin",
